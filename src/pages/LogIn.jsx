@@ -14,14 +14,15 @@ export default function LogIn() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-   if(localStorage.getItem('password') === password && localStorage.getItem('email') === email) {
-        navigate('/Books');
-      } else {
-        setError('Wrong email or password');
-        setEmail('');
-        setPassword('');
-    
-  }};
+    if (localStorage.getItem('password') === password && localStorage.getItem('email') === email) {
+      navigate('/Books');
+    } else if (localStorage.getItem('password') === null && localStorage.getItem('email') === null) {
+      setError('You do not have Accounts enabled');
+      navigate("/SignUp");
+    } else {
+      setError('Invalid email or password');
+    }
+    };
 
   return (
     <div className="grid min-h-screen place-items-center">

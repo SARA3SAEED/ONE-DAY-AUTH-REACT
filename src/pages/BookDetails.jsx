@@ -1,7 +1,7 @@
 import React from 'react';
 import NavLogout from '../components/NavLogout';
 import Booksinfo from '../pages/Booksinfo';
-import { Link, useParams } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 
 
 export default function BookDetails() {
