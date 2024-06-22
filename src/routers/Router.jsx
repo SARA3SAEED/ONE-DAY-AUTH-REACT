@@ -4,6 +4,7 @@ import SignUp from '../pages/SignUp'
 import LogIn from '../pages/LogIn'
 import Books from '../pages/Books'
 import BookDetails from '../pages/BookDetails'
+import Error from '../pages/Error'
 import {createBrowserRouter,RouterProvider } from 'react-router-dom'
 
 export default function Router() {
